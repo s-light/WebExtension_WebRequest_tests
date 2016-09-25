@@ -1,0 +1,32 @@
+{
+
+    "manifest_version": 2,
+    "name": "WebExtension_Playground",
+    "homepage_url": "https://github.com/s-light/WebExtension_Playground",
+    "version": "1.0",
+
+    "description": "a first WebExtension to play around with the concepts and techniques.",
+
+    "icons": {
+        "48": "icons/playground.svg"
+    },
+
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "page_action": {
+        "browser_style": true,
+        "default_icon": "icons/playground_white.svg",
+        "default_title": "special url detected?",
+        "default_popup": "popup/info.html"
+    }
+
+}
